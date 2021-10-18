@@ -11,7 +11,7 @@ int main() {
 
 	cout << "Array a: ";
 	for(int i = 0; i < input_array_a_size; i++) {
-		cout << input_array_a[i] << " ";
+		cout << input_array_a_size << input_array_a[i] << " ";
 	}
 	cout << "\nArray b: ";
 	for(int i = 0; i < input_array_b_size; i++) {
@@ -32,11 +32,31 @@ int main() {
 	}
 	*/
 
-	double buffer_variable;
-	while(
+	double output_array[input_array_a_size + input_array_b_size];
+	for(int i = 0; i < input_array_a_size + input_array_b_size; i++) {
+		bool b_finished = false, b_progress = false;
+		int b_element = 0;
+		if(i = interrupt_element + 1) {
+			b_progress = true;
+		}
+		if(!b_progress && !b_finished) {
+			output_array[i] = input_array_a[i];
+		}
+		if(b_progress && b_element <= input_array_b_size) {
+			output_array[i] = input_array_b[i - interrupt_element];
+			b_element++;
+		}
+		if(b_element > input_array_b_size) {
+			b_finished  = true;
+			b_progress = false;
+		}
+		if(!b_progress && b_finished) {
+			output_array[i] = input_array_a[i - input_array_b_size];
+		}
+	}
 
 	for(int i = 0; i < input_array_a_size + input_array_b_size; i++) {
-		cout << output_array[i] << " ";
+		cout << output_array[i] << ' ';
 	}
 	cout << endl;
 

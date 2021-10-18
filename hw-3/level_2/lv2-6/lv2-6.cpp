@@ -2,8 +2,6 @@
 
 using namespace std;
 
-#define BIG_NUMBER 9999999999999
-
 double g_input_array[10] = {43, 12, 32, 4, -2, -43, 17, 52, 12, 33};
 double g_p = 69;
 
@@ -14,7 +12,7 @@ int main() {
 		array_elements_sum += g_input_array[i];
 	}
 	double array_median = array_elements_sum / array_size;
-	double minimal_difference = BIG_NUMBER;
+	double minimal_difference = abs(array_median - g_input_array[0]);
 	int closest_to_median_index;
 	for(int i = 0; i < array_size; i++) {
 		if(abs(array_median - g_input_array[i]) < minimal_difference) {

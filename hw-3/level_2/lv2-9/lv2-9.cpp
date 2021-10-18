@@ -2,12 +2,10 @@
 
 using namespace std;
 
-#define BIG_NUMBER 9999999999999
-
 int main() {
 	double input_array[10] = {8.12,-9999,-3.11,65,-43,9324,55,-129,21,12};
 
-	double min_num = BIG_NUMBER, max_num = -BIG_NUMBER;
+	double min_num = input_array[0], max_num = input_array[0];
 	int min_num_index, max_num_index;
 	for(int i = 0; i < 10; i++) {
 		if(input_array[i] > max_num) {
@@ -18,6 +16,13 @@ int main() {
 			min_num_index = i;
 		}
 	}
+
+        if(min_num_index > max_num_index) {
+                int temp_index = min_num_index;
+                min_num_index = max_num_index;
+                max_num_index = temp_index;
+        }
+
 
 	double select_elements_sum = 0;
 	for(int i = min_num_index + 1; i < max_num_index; i++) {
