@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>   // to get normal-looking output using arrayToString() and for debug purposes
+
 using namespace std;
 
 string arrayToString(double input_array[], int array_size) {
