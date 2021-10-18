@@ -4,9 +4,9 @@ using namespace std;
 
 int main() {
     // test input_array #1
-    //double input_array[12] = {5,6,7,8,9,0,1,2,3,2,3,2};
+    //int input_array[12] = {5,6,7,8,9,0,1,2,3,2,3,2};
     // test input_array #2
-    double input_array[10] = {1,2,3,8,6,5,4,3,2,1};
+    int input_array[10] = {1,2,3,8,6,5,4,3,2,1};
     // test input_array #3
     //double input_array[8] = {123.12,222,41,555.53,352,1,555.53,123.12};
 
