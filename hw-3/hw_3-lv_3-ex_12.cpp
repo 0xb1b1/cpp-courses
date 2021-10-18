@@ -25,6 +25,7 @@ int main(int argc, char *argv[]) {
     bool args_present = true, debug_mode = false;
     if(argc == 1) { args_present = false; }
     if(args_present) { if(argv[1] == g_debug_arg || argv[1] == g_debug_arg_short) { debug_mode = true; } }
+    
     // test input_array #1
     double input_array[12] = {5,-6,7,8,9,0,-1,2,3,2,-3,2};
     // test input_array #2
