@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
     }
     if(debug_mode) { DIVIDER cout << "DEBUG: biggest_num: " << biggest_num << "\nLOCATION: [" << biggest_num_location[0] << "," << biggest_num_location[1] << "]" << endl; DIVIDER }
 
-    // copying the 3rd column to swap_third_column
+    // copy the 3rd column to swap_third_column
     int swap_third_column[rows], swap_third_column_current_member = 0;
     for(int row = 0; row < rows; row++) {
         for(int column = 0; column < columns; column++) {
@@ -44,7 +44,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // copying the column with the biggest member to the 3rd column
+    // copy the column with the biggest member to the 3rd column
     for(int row = 0; row < rows; row++) {
         for(int column = 0; column < columns; column++) {
             if(column == biggest_num_location[1]) {
@@ -53,7 +53,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
-    // copying swap_third_column into the place of the column with the biggest member
+    // copy swap_third_column into the place of the column with the biggest member
     swap_third_column_current_member = 0;
     for(int row = 0; row < rows; row++) {
         for(int column = 0; column < columns; column++) {
