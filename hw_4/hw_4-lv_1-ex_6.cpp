@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
     int rows = 4, columns = 7;
-    int input_matrix[4][7] =   {{1,2,3,4,5,6,7},
+    int input_matrix[rows][columns] =   {{1,2,3,4,5,6,7},
                                 {8,9,0,1,2,3,4},
                                 {5,6,7,8,9,0,1},
                                 {2,3,4,5,6,7,8}};
