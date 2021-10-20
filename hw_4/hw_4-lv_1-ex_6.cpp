@@ -1,5 +1,5 @@
 #include <iostream>
-#include <string>   // to create a 1d array
+#include <string>   // to create a 1d array, not necessary
 
 using namespace std;
 
