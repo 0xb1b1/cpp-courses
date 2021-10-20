@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
     if(args_present && !debug_mode) { cout << "Usage: -d/--debug - Information for debugging purposes (optional)\nTerminated\n"; return(-1); }
     if(debug_mode) { cout << "DEBUG MODE ACTIVATED\n"; }
 
-    int rows = 5, columns = 5;
+    int rows = 5, columns = 5, column_to_swap = 3;
     int input_matrix[rows][columns] =  {{1,2,3,4,5},
                                         {1,3,4,1,3},
                                         {1,9,1,1,4},    // biggest element here, position 1
@@ -37,7 +37,7 @@ int main(int argc, char *argv[]) {
     int swap_third_column[rows], swap_third_column_current_member = 0;
     for(int row = 0; row < rows; row++) {
         for(int column = 0; column < columns; column++) {
-            if(column == 3) {
+            if(column == column_to_swap) {
                 swap_third_column[swap_third_column_current_member] = input_matrix[row][column];
                 swap_third_column_current_member++;
             }
@@ -48,7 +48,7 @@ int main(int argc, char *argv[]) {
     for(int row = 0; row < rows; row++) {
         for(int column = 0; column < columns; column++) {
             if(column == biggest_num_location[1]) {
-                input_matrix[row][3] = input_matrix[row][column];
+                input_matrix[row][column_to_swap] = input_matrix[row][column];
             }
         }
     }
