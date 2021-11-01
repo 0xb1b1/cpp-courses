@@ -6,6 +6,7 @@ void swap(int &number_a, int &number_b) {
     int buffer = number_a;
     number_a = number_b;
     number_b = buffer;
+}
 
 int main() {
     int input_array_size = 10,
