@@ -7,6 +7,7 @@ using namespace std;
 string g_debug_arg = "--debug", g_debug_arg_short = "-d";
 
 int main(int argc, char *argv[]) {
+	// Add debugging capabilities
     bool args_present = true, debug_mode = false;
     if(argc == 1) { args_present = false; }
     if(args_present) { if(argv[1] == g_debug_arg || argv[1] == g_debug_arg_short) { debug_mode = true; } }
