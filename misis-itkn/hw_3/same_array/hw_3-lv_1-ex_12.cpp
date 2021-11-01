@@ -18,6 +18,7 @@ int main() {
     for(int element = 0; element < array_size; element++) {
         cout << input_array[element] << " ";
     } cout << endl;
+    
     // Output the result
     cout << "The last negative element is on position " << last_negative_index + 1
         << " and its value is " << input_array[last_negative_index] << endl;
