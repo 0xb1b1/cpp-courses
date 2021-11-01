@@ -9,7 +9,7 @@ int main() {
 
     // Output the input array before changing it
     cout << "Input array: ";
-    for(int element = 0; element < positive_elements; element++) {
+    for(int element = 0; element < array_size; element++) {
         cout << input_array[element] << " ";
     } cout << endl;
 
