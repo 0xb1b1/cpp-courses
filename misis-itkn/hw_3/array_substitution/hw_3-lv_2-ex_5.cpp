@@ -44,7 +44,7 @@ int main() {
 		max_num_index = temp_index;
 	}
 
-	// Count negative elements scope
+	// Count negative elements in scope
 	int negative_elements = 0;
         for(int i = max_num_index + 1; i < min_num_index + 1; i++) {
                 if(input_array[i] < 0) {
