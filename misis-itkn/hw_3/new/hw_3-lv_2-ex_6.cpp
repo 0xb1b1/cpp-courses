@@ -35,7 +35,7 @@ int main(int argc, char *argv[]) {
 		}
 	}
 
-	// Create the output_array and put closest_to_median into it
+	// Create the output_array and put p into it, next to closest_to_median 
 	double output_array[input_array_size + 1];
 	bool p_placed = false;
 	for(int i = 0; i < input_array_size + 1; i++) {
