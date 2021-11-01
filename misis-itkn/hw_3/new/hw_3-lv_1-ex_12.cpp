@@ -3,11 +3,12 @@
 using namespace std;
 
 int main() {
-    int array_size = 8,
-        input_array[array_size] = {-1,-2,-3,4,-5,6,7,8},
+    int input_array_size = 8,
+        input_array[input_array_size] = {-1,-2,-3,4,-5,6,7,8},
         last_negative_index;
 
-    for(int element = 0; element < array_size; element++) {
+    // Find the last negative element in input_array
+    for(int element = 0; element < input_array_size; element++) {
         if(input_array[element] < 0) {
             last_negative_index = element;
         }
@@ -15,7 +16,7 @@ int main() {
 
     // Output the input array
     cout << "Input array: ";
-    for(int element = 0; element < array_size; element++) {
+    for(int element = 0; element < input_array_size; element++) {
         cout << input_array[element] << " ";
     } cout << endl;
     

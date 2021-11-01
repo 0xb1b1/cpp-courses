@@ -7,6 +7,7 @@ int main() {
         input_array[array_size] = {-1,-2,-3,4,-5,6,-7,8,9,-1},
         positive_elements = array_size, lookup_offset = 0;
 
+    // Create two arrays, for even-indexed numbers and odd-indexed numbers
 	int even_output_array[5], odd_output_array[5],
 	    even_count = 0, odd_count = 0, output_array_size = 5;
 	for(int element = 0; element < array_size; element++) {
