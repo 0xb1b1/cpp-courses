@@ -33,7 +33,7 @@ int main() {
     }
 
     // Output the input array
-    cout << "Input array: ";
+    cout << "Output array: ";
     for(int element = 0; element < input_array_size; element++) {
         cout << input_array[element] << " ";
     } cout << endl;
