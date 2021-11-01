@@ -45,4 +45,4 @@ int main() {
     cout << "Longest increasing/decreasing sequence: " << longest_sequence << endl;
 
 	return(0);
-}
+    
