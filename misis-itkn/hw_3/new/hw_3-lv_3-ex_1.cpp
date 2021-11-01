@@ -7,7 +7,7 @@ int main() {
         input_array[8] = {2,4,8,7,2,4,8,3};
 	
     // Find the biggest number among all elements of input_array\
-    and note its occurrences
+    and take note of its occurrences
     int max_num = input_array[0];
 	for(int i = 0; i < input_array_size; i++) {
 		if(input_array[i] > max_num) {
