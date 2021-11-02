@@ -52,7 +52,22 @@ int main(int argc, char *argv[]) {
         output_matrix_current_column = 0;
     }
 
+    // Output the input matrix
+    cout << "Input matrix:\n";
+    cout << "[";
+    for(int row = 0; row < rows; row++) {
+        cout << "[";
+        for(int column = 0; column < columns; column++) {
+            if(column != columns - 1) { cout << input_matrix[row][column] << ","; }
+            else { cout << input_matrix[row][column]; }
+        }
+        if(row != rows - 1) { cout << "],\n "; }
+        else { cout << "]"; }
+    }
+    cout << "]" << endl;
+
     // Output the output matrix
+    cout << "Output matrix:\n";
     cout << "[";
     for(int row = 0; row < rows - 1; row++) {
         cout << "[";
