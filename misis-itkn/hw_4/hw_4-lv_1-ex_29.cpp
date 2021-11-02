@@ -10,7 +10,7 @@ int main() {
                                         {1, 2,-4, 2, 6,9, 2},
                                         {3, 1, 4, 3,-2,4, 3},
                                         {2,-8, 2,-6, 3,4, 7}};
-                                                       // ^ Delete this column
+                                                  // ^ Delete this column
     
     // Output the input matrix before changing it
     cout << "Input matrix:\n";
