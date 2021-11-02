@@ -7,12 +7,14 @@ using namespace std;
 string g_debug_arg = "--debug", g_debug_arg_short = "-d";
 
 int main(int argc, char *argv[]) {
+    // Add debug mode
     bool args_present = true, debug_mode = false;
     if(argc == 1) { args_present = false; }
     if(args_present) { if(argv[1] == g_debug_arg || argv[1] == g_debug_arg_short) { debug_mode = true; } }
     if(args_present && !debug_mode) { cout << "Usage: -d/--debug - Information for debugging purposes (optional)\nTerminated\n"; return(-1); }
     if(debug_mode) { cout << "DEBUG MODE ACTIVATED\n"; }
 
+    // Input data
     int rows = 5, columns = 5, column_to_swap = 3;
     int input_matrix[rows][columns] =  {{1,2,3,4,5},
                                         {1,5,4,1,3},
@@ -33,6 +35,7 @@ int main(int argc, char *argv[]) {
         search_current_column++;
     }
 
+    // Output debug information
     if(debug_mode) { DIVIDER cout << "DEBUG: biggest_num: " << biggest_num << "\nLOCATION: [" << biggest_num_location[0] << "," << biggest_num_location[1] << "]" << endl; DIVIDER }
 
     // copy the 3rd column to swap_third_column
@@ -66,6 +69,7 @@ int main(int argc, char *argv[]) {
         }
     }
 
+    // Output the input matrix
     cout << "[";
     for(int row = 0; row < rows; row++) {
         cout << "[";
