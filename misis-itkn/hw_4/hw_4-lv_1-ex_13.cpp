@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
     // Output debug information
     if(debug_mode) { DIVIDER cout << "DEBUG: biggest_num: " << biggest_num << "\nLOCATION: [" << biggest_num_location[0] << "," << biggest_num_location[1] << "]" << endl; DIVIDER }
 
-    // Copy the 3rd column to swap_third_column
+    // Copy the 3rd column to swap_column
     int swap_column[rows], swap_column_current_member = 0;
     for(int row = 0; row < rows; row++) {
         for(int column = 0; column < columns; column++) {
