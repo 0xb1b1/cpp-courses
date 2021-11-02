@@ -42,7 +42,8 @@ int main() {
             }
         }
 
-        // If the value is seen for the first time, 
+        // If the value is seen for the first time, add it to checked_values and substract\
+        extra (same-value element) occurrences
         if(!noted) {
             checked_values[current_checked_value] = input_array[element];
             current_checked_value++;
