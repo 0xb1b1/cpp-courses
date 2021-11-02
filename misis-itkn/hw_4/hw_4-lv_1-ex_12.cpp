@@ -38,7 +38,7 @@ int main(int argc, char *argv[]) {
     // Output debug information
     if(debug_mode) { DIVIDER cout << "DEBUG: biggest_num: " << biggest_num << "\nLOCATION: [" << biggest_num_location[0] << "," << biggest_num_location[1] << "]" << endl; DIVIDER }
 
-    // Create the output matrix and put modified data from input_matrix
+    // Create the output matrix and put modified data from input_matrix into it
     int output_matrix[rows - 1][columns - 1];
     int output_matrix_current_row = 0, output_matrix_current_column = 0;
     for(int row = 0; row < rows; row++) {
