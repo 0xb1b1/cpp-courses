@@ -2,17 +2,7 @@
 
 using namespace std;
 
-#define DIVIDER cout << "--------------------\n";
-
-string g_debug_arg = "--debug", g_debug_arg_short = "-d";
-
-int main(int argc, char *argv[]) {
-    // Add debug mode
-    bool args_present = true, debug_mode = false;
-    if(argc == 1) { args_present = false; }
-    if(args_present) { if(argv[1] == g_debug_arg || argv[1] == g_debug_arg_short) { debug_mode = true; } }
-    if(debug_mode) { cout << "DEBUG MODE ACTIVATED\n"; }
-
+int main() {
     // Input data
     int rows = 6, columns = 7;
     int input_matrix[rows][columns] =  {{3,3,2,4,1,3,1},
