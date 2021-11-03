@@ -49,7 +49,7 @@ int main() {
         input_matrix[row][smallest_value_fifth_row_column + 1] = input_vector[row];
     }
 
-    // Output the input matrix before changing it
+    // Output the input matrix
     cout << "Output matrix:\n";
     cout << "[";
     for(int row = 0; row < rows; row++) {
