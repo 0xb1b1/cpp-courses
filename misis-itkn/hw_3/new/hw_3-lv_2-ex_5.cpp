@@ -44,7 +44,7 @@ int main() {
 		}
 	} cout << endl;
 
-    // Output the input array
+    // Output the input array and show scope
     cout << "Input array: ";
     for(int element = 0; element < array_size; element++) {
         if(element == min_num_index || element == max_num_index) {
