@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     int input_array_size = 10,
-        input_array[input_array_size] = {1,2,3,4,6,5,4,3,4,1};
+        input_array[input_array_size] = {5,4,3,2,2,5,4,3,4,1};
 
 	// Calculate the longest increasing sequence
     int current_increasing_sequence = 1, longest_sequence = 0;
@@ -45,4 +45,4 @@ int main() {
     cout << "Longest increasing/decreasing sequence: " << longest_sequence << endl;
 
 	return(0);
-    
+}
