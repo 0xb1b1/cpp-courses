@@ -18,7 +18,7 @@ int main() {
     for(int row = 0; row < rows; row++) {
         cout << "[";
         for(int column = 0; column < columns; column++) {
-            if(input_matrix[row][column] > -1 && column != 0) { cout << " "; }
+            if(input_matrix[row][column] > -1) { cout << " "; }
             if(column != columns - 1) { cout << input_matrix[row][column] << ","; }
             else { cout << input_matrix[row][column]; }
         }
@@ -59,7 +59,7 @@ int main() {
     for(int row = 0; row < rows; row++) {
         cout << "[";
         for(int column = 0; column < columns - 1; column++) {
-            if(output_matrix[row][column] > -1 && column != 0) { cout << " "; }
+            if(output_matrix[row][column] > -1) { cout << " "; }
             if(column != columns - 2) { cout << output_matrix[row][column] << ","; }
             else { cout << output_matrix[row][column]; }
         }
