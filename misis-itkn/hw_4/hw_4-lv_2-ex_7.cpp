@@ -1,5 +1,5 @@
 #include <iostream>
-#include <vector>
+
 
 using namespace std;
 
@@ -12,7 +12,6 @@ int main() {
                                         {-3, 1, 4,-3,-2,-4},
                                         { 8, 2, 5, 7, 2, 7},
                                         { 2,-8, 2,-6, 1, 2}};
-    vector <int> input_vector = {6,9,6,9,6};
     
     // Output the input matrix before changing it
     cout << "Input matrix:\n";
