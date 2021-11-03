@@ -29,15 +29,13 @@ int main() {
     } cout << "]" << endl;
 
     // Search for the biggest number in the top-left diagonal array
-    int biggest_diagonal_num_location[2] = {0,0}, biggest_diagonal_num = input_matrix[0][0],
-        search_current_column = 0;
+    int biggest_diagonal_num_location[2] = {0,0}, biggest_diagonal_num = input_matrix[0][0];
     for(int row = 0; row < rows; row++) {
-        if(input_matrix[row][search_current_column] > biggest_diagonal_num) {
-            biggest_diagonal_num = input_matrix[row][search_current_column];
+        if(input_matrix[row][row] > biggest_diagonal_num) {
+            biggest_diagonal_num = input_matrix[row][row];
             biggest_diagonal_num_location[0] = row;
-            biggest_diagonal_num_location[1] = search_current_column;
+            biggest_diagonal_num_location[1] = row;
         }
-        search_current_column++;
     }
 
     // Change elements to the right/top side of both axes to NULL
