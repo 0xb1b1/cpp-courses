@@ -2,11 +2,11 @@
 
 using namespace std;
 
-void swap(int &number_a, int &number_b) {
+/*void swap(int &number_a, int &number_b) {
     int buffer = number_a;
     number_a = number_b;
     number_b = buffer;
-}
+}*/ // Avoiding the swap function per instructions
 
 int main() {
     int input_array_size = 10,
@@ -29,7 +29,10 @@ int main() {
             }
         }
         if(min_value_index != -1) {
-            swap(input_array[element], input_array[min_value_index]);
+            //swap(input_array[element], input_array[min_value_index]); // Avoiding the swap function per instructions
+            int swap_min_value = input_array[min_value_index];
+            input_array[min_value_index] = input_array[element];
+            input_array[element] = swap_min_value;
         }
     }
 
