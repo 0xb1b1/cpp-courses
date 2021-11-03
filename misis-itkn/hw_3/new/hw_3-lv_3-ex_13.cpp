@@ -21,7 +21,7 @@ int main() {
         int lookup_offset = 0, removed_elements_count = 0;
         // Remember whether the current element is in checked_values and thus the following check\
         shouldn't be performed and output_array_size should not be decreased
-        bool noted;
+        bool noted = false;
 
         // Check whether the value has already been checked
         for(int check = 0; check < input_array_size; check++) {
