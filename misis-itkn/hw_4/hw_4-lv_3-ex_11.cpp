@@ -43,7 +43,7 @@ int main() {
     }
 
     // Create output_matrix to correspond with the reduced data size of input_array
-    // Create output_matrix with its size reduced by ***
+    // Create output_matrix with its size reduced by [zero_encounters_counter][]
     int output_matrix[rows - zero_encounters_counter][columns];
     // Copy input_array into output_array
     for(int row = 0; row < rows - zero_encounters_counter; row++) {
