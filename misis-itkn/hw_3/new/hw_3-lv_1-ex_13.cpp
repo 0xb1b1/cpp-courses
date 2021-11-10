@@ -10,12 +10,14 @@ int main() {
     // Create two arrays, for even-indexed numbers and odd-indexed numbers
 	int even_output_array[5], odd_output_array[5],
 	    even_count = 0, odd_count = 0, output_array_size = 5;
-	for(int element = 0; element < array_size; element++) {
-		if(element % 2 == 0) {
-			even_output_array[even_count] = input_array[element];
-			even_count++;
-		} else {
-			odd_output_array[odd_count] = input_array[element];
+	for(int element = 0; element < array_size; element += 2) {
+        // Add even elements to even_output_array
+		even_output_array[even_count] = input_array[element];
+		even_count++;
+
+        // Add odd elements to odd_output_array
+        if(element != array_size) {
+		    odd_output_array[odd_count] = input_array[element + 1];
             odd_count++;
 		}
 	}

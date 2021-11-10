@@ -37,12 +37,11 @@ int main() {
             }
         }
 
-        // Swap the first value for the smallest one and vice versa
-        if(min_row_value_column != -1) {
-            int min_first_value_swap = input_matrix[row][0],
-                min_swap_value = input_matrix[row][min_row_value_column];
-            input_matrix[row][0] = min_swap_value;
-            input_matrix[row][min_row_value_column] = min_first_value_swap;
+        if(min_row_value_column != 0) {
+            for(int element = min_row_value_column; element > 1; element--) {
+                input_matrix[row][element] = input_matrix[row][element - 1];
+            }
+            input_matrix[row][0] = min_row_value;
         }
     }
 

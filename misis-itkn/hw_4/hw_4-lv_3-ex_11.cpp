@@ -42,6 +42,7 @@ int main() {
         }
     }
 
+    /*  // Removed per request
     // Create output_matrix to correspond with the reduced data size of input_array
     // Create output_matrix with its size reduced by [zero_encounters_counter][]
     int output_matrix[rows - zero_encounters_counter][columns];
@@ -50,7 +51,7 @@ int main() {
         for(int column = 0; column < columns; column++) {
             output_matrix[row][column] = input_matrix[row][column];
         }
-    }
+    }*/
 
     // Output the output matrix
     cout << "Output matrix:\n";
@@ -58,9 +59,9 @@ int main() {
     for(int row = 0; row < rows - zero_encounters_counter; row++) {
         cout << "[";
         for(int column = 0; column < columns; column++) {
-            if(output_matrix[row][column] > -1) { cout << " "; }
-            if(column != columns - 1) { cout << output_matrix[row][column] << ","; }
-            else { cout << output_matrix[row][column]; }
+            if(input_matrix[row][column] > -1) { cout << " "; }
+            if(column != columns - 1) { cout << input_matrix[row][column] << ","; }
+            else { cout << input_matrix[row][column]; }
         }
         if(row != rows - 1 - zero_encounters_counter) { cout << "],\n "; }
         else { cout << "]"; }

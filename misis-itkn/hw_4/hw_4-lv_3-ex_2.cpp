@@ -27,17 +27,10 @@ int main() {
     } cout << "]" << endl;
 
     // Change border elements to NULL
-    for(int row = 0; row < rows; row++) {
-        for(int column = 0; column < columns; column++) {
-            if(row == 0 || row == rows - 1) {
-                input_matrix[row][column] = 0;
-            }
-            else {
-                if(column == 0 || column == columns - 1) {
-                    input_matrix[row][column] = 0;
-                }
-            }
-        }
+    for(int element = 0; element < rows; element++) {
+        input_matrix[0][element] = 0;
+        input_matrix[rows - 1][element] = 0;
+        input_matrix[element][rows - 1] = 0;
     }
 
     // Output the input matrix

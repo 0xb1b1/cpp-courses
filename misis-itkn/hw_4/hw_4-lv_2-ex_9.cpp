@@ -28,7 +28,7 @@ int main() {
 
     // Arrange elements of every row in reverse order
     for(int row = 0; row < rows; row++) {
-        for(int column = 0; column < (columns / 2) % 2 + 2; column++) {
+        for(int column = 0; column < column / 2 + 2; column++) {
             int swap_first_element = input_matrix[row][column];
             input_matrix[row][column] = input_matrix[row][columns - column - 1];
             input_matrix[row][columns - column - 1] = swap_first_element;

@@ -27,8 +27,8 @@ int main() {
     cout << "]" << endl;
 
     // Sort rows with even indices in descending order, with odd ones - in ascending order
-    for(int row = 0; row < rows; row++) {
-        if(row % 2 == 0) {
+    for(int row = 0; row < rows; row += 2) {
+        
             for(int column = 0; column < columns; column++) {
                 int biggest_value_to_swap = input_matrix[row][column],
                     biggest_value_to_swap_column = column;
@@ -43,21 +43,21 @@ int main() {
                 input_matrix[row][column] = input_matrix[row][biggest_value_to_swap_column];
                 input_matrix[row][biggest_value_to_swap_column] = swap_value;
             }
-        }
-        else {
+        
+        if(row != rows) {
             for(int column = 0; column < columns; column++) {
-                int smallest_value_to_swap = input_matrix[row][column],
+                int smallest_value_to_swap = input_matrix[row + 1][column],
                     smallest_value_to_swap_column = column;
                 for(int column_search = column + 1; column_search < columns; column_search++) {
-                    if(input_matrix[row][column_search] < smallest_value_to_swap) {
-                        smallest_value_to_swap = input_matrix[row][column_search];
+                    if(input_matrix[row + 1][column_search] < smallest_value_to_swap) {
+                        smallest_value_to_swap = input_matrix[row + 1][column_search];
                         smallest_value_to_swap_column = column_search;
                     }
                 }
                 // Swap current item with the one at smallest_value_to_swap_column
-                int swap_value = input_matrix[row][column];
-                input_matrix[row][column] = input_matrix[row][smallest_value_to_swap_column];
-                input_matrix[row][smallest_value_to_swap_column] = swap_value;
+                int swap_value = input_matrix[row + 1][column];
+                input_matrix[row + 1][column] = input_matrix[row + 1][smallest_value_to_swap_column];
+                input_matrix[row + 1][smallest_value_to_swap_column] = swap_value;
             }
         }
     }
