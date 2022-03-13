@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.13)
+project(prj.codeforces)
+set (CMAKE_CXX_STANDARD 17)
+
+add_subdirectory(0004a)
+add_subdirectory(0271a)
+add_subdirectory(0276a)
+add_subdirectory(0617a)
+add_subdirectory(1004a)
+add_subdirectory(1006a)
