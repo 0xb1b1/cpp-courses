@@ -6,5 +6,5 @@ steps:
 -  name: docker-compile
    image: docker:stable-dind
    commands:
-    - >
-      docker build .
+    - sleep 5  # Give Docker enough time to start
+    - docker build .
