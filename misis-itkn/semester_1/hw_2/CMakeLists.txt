@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.13)
+project(semester_1-hw_2)
+set (CMAKE_CXX_STANDARD 17)
+
+add_subdirectory(hw_2-lv_1-ex_2)
+add_subdirectory(hw_2-lv_1-ex_3)
+add_subdirectory(hw_2-lv_2-ex_1)
+add_subdirectory(hw_2-lv_2-ex_11)
+add_subdirectory(hw_2-lv_2-ex_4)
+add_subdirectory(hw_2-lv_2-ex_4-string)
+add_subdirectory(hw_2-lv_3-ex_12)
+add_subdirectory(hw_2-lv_3-ex_13)

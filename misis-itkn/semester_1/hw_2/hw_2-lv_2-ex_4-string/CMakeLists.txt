@@ -1,0 +1,4 @@
+cmake_minimum_required(VERSION 3.13)
+project(semester_1-hw_2-lv_2-ex_4-string)
+
+add_executable(semester_1-hw_2-lv_2-ex_4-string main.cpp)
