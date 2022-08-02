@@ -8,3 +8,15 @@ steps:
    commands:
     - sleep 5  # Give Docker enough time to start
     - docker build .
+
+services:
+- name: docker
+  image: docker:dind
+  privileged: true
+  volumes:
+  - name: dockersock
+    path: /var/run
+
+volumes:
+- name: dockersock
+  temp: {}
