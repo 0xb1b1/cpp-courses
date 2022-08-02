@@ -5,6 +5,12 @@ name: default
 steps:
 -  name: docker-compile
    image: docker:stable-dind
+   privileged: true
    commands:
     - >
       docker build .
+   volumes:
+    - name: docker_run
+      path: /var/run/
+    - name: docker_lib
+      path:  /var/lib/docker
